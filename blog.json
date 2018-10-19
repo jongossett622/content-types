@@ -1,0 +1,66 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/blog.json",
+  "title": "Blog Accelerator",
+  "description": "Blog Accelerator",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "snippet",
+    "title",
+    "keywords",
+    "content"
+  ],
+  "type": "object",
+  "properties": {
+    "snippet": {
+      "type": "object",
+      "title": "Snippet",
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/jongossett622/content-types/master/snippet.json"
+        }
+      ]
+    },
+    "title": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Title",
+      "description": ""
+    },
+    "content": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "Content",
+                "enum": [
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/banner.json",
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/image.json",
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/video.json",
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/text.json",
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/cardlist.json",
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/blog.json"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 0,
+      "maxItems": 20,
+      "title": "Content",
+      "description": ""
+    }
+  }
+}
