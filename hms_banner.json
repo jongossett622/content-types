@@ -60,6 +60,13 @@
       "title": "Header",
       "description": "add header"
     },
+      "kioskheader": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Kiosk Header",
+      "description": "add header"
+    },
     "description": {
       "type": "string",
       "minLength": 0,
