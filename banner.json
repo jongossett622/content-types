@@ -10,8 +10,8 @@
   ],
   "propertyOrder": [
     "bannerImage",
-    "subheader",
     "header",
+    "subheader",
     "description",
     "button",
     "textPositionLeft",
