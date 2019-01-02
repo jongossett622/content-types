@@ -46,19 +46,19 @@
       "title": "Banner Image",
       "description": "Select or create an image content"
     },
-    "subheader": {
-      "type": "string",
-      "minLength": 0,
-      "maxLength": 255,
-      "title": "Subheader",
-      "description": "add subheader"
-    },
     "header": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
       "title": "Header",
-      "description": "add header"
+      "description": "add Header"
+    },
+    "subheader": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "subheader",
+      "description": "add subheader"
     },
     "description": {
       "type": "string",
