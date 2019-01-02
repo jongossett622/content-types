@@ -1,0 +1,77 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/tutorialbanner.json",
+  "title": "Tutorial banner",
+  "description": "The banner used in the developer tutorials",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "headline",
+    "kioskheadline",
+    "strapline",
+    "description",
+    "background",
+    "callToActionText",
+    "callToActionUrl"
+  ],
+  "type": "object",
+  "properties": {
+    "background": {
+      "allOf": [
+        {
+          "$ref": "https://raw.githubusercontent.com/jongossett622/content-types/master/image.json"
+        }
+      ],
+      "title": "Background image",
+      "description": "The background image for the banner",
+      "type": "object"
+    },
+    "headline": {
+      "title": "Headline",
+      "description": "The main title for the MenuBoard",
+      "type": "string",
+      "format": "text",
+      "minLength": 5,
+      "maxLength": 256
+    },
+     "kioskheadline": {
+      "title": "Kiosk Headline",
+      "description": "The main title for the Kiosk",
+      "type": "string",
+      "format": "text",
+      "minLength": 5,
+      "maxLength": 256
+    },
+    "strapline": {
+      "title": "Strapline",
+      "description": "The subtitle for this banner",
+      "type": "string",
+      "format": "text",
+      "maxLength": 256
+    },
+    "desxcription": {
+      "title": "Description",
+      "description": "Additional Descriptive text",
+      "type": "string",
+      "format": "text",
+      "maxLength": 256
+    },
+    "callToActionText": {
+      "title": "Call to action text",
+      "description": "The text you want displayed with the call to action",
+      "type": "string",
+      "format": "text",
+      "maxLength": 256
+    },
+    "callToActionUrl": {
+      "title": "Call to action URL",
+      "description": "The URL for the call to action",
+      "type": "string",
+      "format": "uri",
+      "maxLength": 256
+    }
+  }
+}
