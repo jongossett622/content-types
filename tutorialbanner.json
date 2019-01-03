@@ -9,11 +9,11 @@
     }
   ],
   "propertyOrder": [
+    "background",
     "headline",
     "kioskheadline",
     "strapline",
     "description",
-    "background",
     "callToActionText",
     "callToActionUrl"
   ],
