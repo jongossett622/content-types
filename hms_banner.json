@@ -52,21 +52,21 @@
       "minLength": 0,
       "maxLength": 255,
       "title": "Menu Board Header",
-      "description": "add header"
+      "description": "add Header"
     },
       "kioskheader": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
       "title": "Kiosk Header",
-      "description": "add header"
+      "description": "add Header"
     },
     "subheader": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
       "title": "Subheader",
-      "description": "add subheader"
+      "description": "add Subheader"
     },
     "description": {
       "type": "string",
