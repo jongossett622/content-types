@@ -14,6 +14,7 @@
     "kioskheader",
     "subheader",
     "description",
+    "menudescription",
     "button",
     "textPositionLeft",
     "textPositionTop",
@@ -65,15 +66,22 @@
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
-      "title": "Subheader",
-      "description": "add Subheader"
+      "title": "Online Description",
+      "description": "add Description for online channels"
     },
     "description": {
       "type": "string",
       "minLength": 0,
       "maxLength": 2000,
-      "title": "Description",
-      "description": "add description"
+      "title": "Options",
+      "description": "add Available Options"
+    },
+    "menudescription": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 2000,
+      "title": "Menu Description",
+      "description": "add Description for Print Menus"
     },
     "button": {
       "title": "Button",
