@@ -52,14 +52,14 @@
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
-      "title": "Menu Board Header",
+      "title": "Main Header",
       "description": "add Header"
     },
       "kioskheader": {
       "type": "string",
       "minLength": 0,
       "maxLength": 255,
-      "title": "Kiosk Header",
+      "title": "Tablet-Kiosk Header",
       "description": "add Header"
     },
     "subheader": {
@@ -80,7 +80,7 @@
       "type": "string",
       "minLength": 0,
       "maxLength": 2000,
-      "title": "Menu Description",
+      "title": "Offline Description",
       "description": "add Description for Print Menus"
     },
     "button": {
