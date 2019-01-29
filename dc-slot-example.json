@@ -1,0 +1,54 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "id": "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/dc-slot-example.json",
+  "title": "dc-slot-example",
+  "description": "dc-slot-example description",
+  "type": "object",
+  "properties": {
+    "_environment": {
+      "type": "object",
+      "properties": {
+        "sfcc_slot": {
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_slot"
+        },
+        "sfcc_category_slot": {
+          "$ref": "https://raw.githubusercontent.com/amplience/dc-integrations-sfcc/master/content-types/sfcc/sfcc.json#/definitions/sfcc_category_slot"
+        }
+      }
+    },
+    "content": {
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "Page Content",
+              "enum": [
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/banner.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/slider.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/video.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/text.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/splitblock.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/image.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/card.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/cardlist.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/externalblock.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/homepage.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/promobanner.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/blog.json",
+                "https://s3-eu-west-1.amazonaws.com/dev-solutions/maic/DynamicContentTypes/link.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

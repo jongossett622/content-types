@@ -1,0 +1,52 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "id": "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/sfcc-content-slot.json",
+    "title": "SFCC Content Slot - Flexible",
+    "description": "SFCC Content Slot - Flexible",
+    "type": "object",
+    "properties": {
+        "_environment": {
+            "type": "object",
+            "properties": {
+                "sfcc_slot": {
+                    "$ref": "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/sfcc-slot.json"
+                },
+                "sfcc_category_slot": {
+                    "$ref": "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/sfcc-category-slot.json"
+                }
+            }
+        },
+        "content": {
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                },
+                {
+                    "properties": {
+                        "contentType": {
+                            "title": "Page Content",
+                            "enum": [
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/image.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/text.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/video.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/cardlist.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/banner.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/slider.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/splitblock.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/promobanner.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/externalblock.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/blog.json",
+                                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/homepage.json"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

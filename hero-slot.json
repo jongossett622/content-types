@@ -1,0 +1,34 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/hero-slot.json",
+  "title": "Hero Banner Slot",
+  "description": "A Slot that can accept a single banner",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "contentType",
+              "enum": [
+                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/banner.json",
+                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/slider.json",
+                "{CONTENT_TYPE_BASEPATH}/DynamicContentTypes/video.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
