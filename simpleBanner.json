@@ -1,7 +1,7 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/simpleBanner.json",
-  "title": "simpleBanner",
+  "title": "Simplified Banner",
   "description": "Simplified Banner",
   "allOf": [
     {
@@ -55,6 +55,13 @@
       "title": "subheader",
       "description": "add subheader"
     },
+    "description": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 2000,
+      "title": "Description",
+      "description": "add description"
+    },
     "button": {
       "title": "Button",
       "description": "add button",
@@ -85,6 +92,6 @@
       "maxLength": 100,
       "title": "Style",
       "description": "Add classname for CSS styling"
-    },
-  },
+    }
+  }
 }
