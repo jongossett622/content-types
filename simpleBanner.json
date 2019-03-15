@@ -1,60 +1,90 @@
 {
-    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id:" "https://s3-eu-west-1.amazonaws.com/amp-product/tutorials/dynamiccontenttutorials/newtutorialbanner.json",
-    "title": "Simple banner",
-    "description": "The banner used in the developer tutorials",
-    "allOf": [
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/banner.json",
+  "title": "Banner Accelerator",
+  "description": "Banner Accelerator",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "propertyOrder": [
+    "bannerImage",
+    "header",
+    "subheader",
+    "button",
+    "textPositionLeft",
+    "textPositionTop",
+    "style",
+  ],
+  "type": "object",
+  "properties": {
+    "bannerImage": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+          },
+          {
+            "properties": {
+              "contentType": {
+                "title": "image",
+                "enum": [
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/image.json"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "title": "Banner Image",
+      "description": "Select or create an image content"
+    },
+    "header": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "Header",
+      "description": "add Header"
+    },
+    "subheader": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 255,
+      "title": "subheader",
+      "description": "add subheader"
+    },
+    "button": {
+      "title": "Button",
+      "description": "add button",
+      "type": "object",
+      "allOf": [
         {
-        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+          "$ref": "https://raw.githubusercontent.com/jongossett622/content-types/master/link.json"
         }
-    ],
-propertyOrder: [
-"headline",
-"strapline",
-"background",
-"calltoactiontext",
-"calltoactionurl"
-],
-type: "object",
-properties: {
-background: {
-allOf: [
-{
-$ref: "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
-}
-],
-title: "Background image",
-description: "The background image for the banner",
-type: "object"
-},
-headline: {
-title: "Headline",
-description: "The main title of this banner",
-type: "string",
-format: "text",
-minLength: 5,
-maxLength: 256
-},
-strapline: {
-title: "Strapline",
-description: "The subtitle for this banner",
-type: "string",
-format: "text",
-maxLength: 256
-},
-calltoactiontext: {
-title: "Call to action text",
-description: "The text you want displayed with the call to action",
-type: "string",
-format: "text",
-maxLength: 256
-},
-calltoactionurl: {
-title: "Call to action URL",
-description: "The URL for the call to action",
-type: "string",
-format: "uri",
-maxLength: 256
-}
-}
+      ]
+    },
+    "textPositionLeft": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 3,
+      "title": "Text Position From The Left",
+      "description": "Enter a percentage value (without a '%' sign) to position text horizontally from the left"
+    },
+    "textPositionTop": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 3,
+      "title": "Text position from middle",
+      "description": "Enter a percentage value (without a '%' sign) to position text vertically from the middle"
+    },
+    "style": {
+      "type": "string",
+      "minLength": 0,
+      "maxLength": 100,
+      "title": "Style",
+      "description": "Add classname for CSS styling"
+    },
+  }
 }
