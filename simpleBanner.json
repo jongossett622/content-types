@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/simpleBanner.json",
-  "title": "Banner Accelerator",
-  "description": "Banner Accelerator",
+  "title": "simpleBanner",
+  "description": "Simplified Banner",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -15,7 +15,7 @@
     "button",
     "textPositionLeft",
     "textPositionTop",
-    "style",
+    "style"
   ],
   "type": "object",
   "properties": {
