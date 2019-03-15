@@ -85,6 +85,6 @@
       "maxLength": 100,
       "title": "Style",
       "description": "Add classname for CSS styling"
-    },
+    }
   }
 }
