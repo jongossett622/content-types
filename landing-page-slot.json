@@ -1,0 +1,17 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/landing-page-slot.json",
+    "title": "Landing Page Slot",
+    "description": "Landing Page Slot",
+    "type": "object",
+    "properties": {
+        "category_id": {
+            "type": "string"
+        }
+    }
+}
