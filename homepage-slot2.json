@@ -2,7 +2,7 @@
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/homepage-slot2.json",
   "title": "HomePage Slot 2",
-  "description": "A Slot that can accept most any content types",
+  "description": "HP second slot from top",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
