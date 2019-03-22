@@ -1,8 +1,8 @@
 {
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/homepage-slot1.json",
-  "title": "HomePage Slot 1",
-  "description": "A Slot that can accept most any content types",
+  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/homepage-slot2.json",
+  "title": "HomePage Slot 2",
+  "description": "A Slot that can accept a banner slider or video",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"

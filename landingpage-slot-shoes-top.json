@@ -1,0 +1,38 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/landingpage-slot-shoes-top.json",
+  "title": "LandingPage Slot Shoes Top",
+  "description": "A Slot that can accept a banner slider or video",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "contentType",
+              "enum": [
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/banner.json",
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/slider.json",
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/image.json",
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/video.json",
+                "https://raw.githubusercontent.com/techiedarren/dc-examples/master/content-types/containers/video-block.json",
+                "https://raw.githubusercontent.com/techiedarren/dc-examples/master/content-types/containers/image-block.json",
+                "https://raw.githubusercontent.com/techiedarren/dc-examples/master/content-types/containers/carousel.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/homepage-slot-video.json",
+  "title": "HomePage Slot Video",
+  "description": "A Slot that can accept only a Video",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+              "title": "contentType",
+              "enum": [
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/video.json",
+                "https://raw.githubusercontent.com/neilmistryamplience/dc-example-website/willow/content-types/shoppableVideo.json",
+                "https://raw.githubusercontent.com/techiedarren/dc-examples/master/content-types/containers/video-block.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
