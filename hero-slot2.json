@@ -1,0 +1,34 @@
+{
+  "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+  "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/hero-slot2.json",
+  "title": "Hero Slot 2",
+  "description": "A Slot that can accept a banner slider or video",
+  "allOf": [
+    {
+      "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+    }
+  ],
+  "type": "object",
+  "properties": {
+    "content": {
+      "title": "Content",
+      "allOf": [
+        {
+          "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+        },
+        {
+          "properties": {
+            "contentType": {
+              "title": "contentType",
+              "enum": [
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/banner.json",
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/slider.json",
+                "https://raw.githubusercontent.com/jongossett622/content-types/master/video.json"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  }
+}
