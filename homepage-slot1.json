@@ -2,7 +2,7 @@
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/homepage-slot1.json",
   "title": "HomePage Slot 1",
-  "description": "A Homepage slot at the top of the page",
+  "description": "First HP Slot",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
