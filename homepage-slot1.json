@@ -2,7 +2,7 @@
   "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
   "id": "https://raw.githubusercontent.com/jongossett622/content-types/master/homepage-slot1.json",
   "title": "HomePage Slot 1",
-  "description": "A Slot that can accept a banner slider or video",
+  "description": "A Homepage slot at the top of the page",
   "allOf": [
     {
       "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
