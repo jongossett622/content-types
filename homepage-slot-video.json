@@ -18,6 +18,7 @@
         },
         {
           "properties": {
+            "contentType": {
               "title": "contentType",
               "enum": [
                 "https://raw.githubusercontent.com/jongossett622/content-types/master/video.json",
