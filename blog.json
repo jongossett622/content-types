@@ -50,6 +50,7 @@
                   "https://raw.githubusercontent.com/jongossett622/content-types/master/video.json",
                   "https://raw.githubusercontent.com/jongossett622/content-types/master/text.json",
                   "https://raw.githubusercontent.com/jongossett622/content-types/master/cardlist.json",
+                  "https://raw.githubusercontent.com/jongossett622/content-types/master/splitblock.json",
                   "https://raw.githubusercontent.com/jongossett622/content-types/master/blog.json"
                 ]
               }
