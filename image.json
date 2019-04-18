@@ -46,7 +46,7 @@
       "description": "Roundel Image",
       "type": "array",
       "items": {
-        "$ref": "https://raw.githubusercontent.com/jongossett622/content-types/masters/roundel.json"
+        "$ref": "https://raw.githubusercontent.com/jongossett622/content-types/master/roundel.json"
       },
       "minItems": 0,
       "maxItems": 4,
