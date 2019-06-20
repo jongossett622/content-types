@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-monogram.json",
+    "id": "https://github.com/jongossett622/content-types/master/configurator/configurator-monogram.json",
     "allOf": [
         {
             "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -22,7 +22,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-svg-image.json"
+                                    "https://github.com/jongossett622/content-types/master/configurator/configurator-svg-image.json"
                                 ]
                             }
                         }
@@ -55,7 +55,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-step.json"
+                                    "https://github.com/jongossett622/content-types/master/configurator/configurator-step.json"
                                 ]
                             }
                         }

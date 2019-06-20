@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://github.com/jongossett622/content-types/blob/master/configurator/lib/configurator-sku.json",
+    "id": "https://github.com/jongossett622/content-types/master/configurator/lib/configurator-sku.json",
     "title": "Configurator sku",
     "description": "",
     "type": "object",

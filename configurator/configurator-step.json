@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-step.json",
+    "id": "https://github.com/jongossett622/content-types/master/configurator/configurator-step.json",
     "allOf": [
         {
             "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -43,7 +43,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-swatch.json"
+                                    "https://github.com/jongossett622/content-types/master/configurator/configurator-swatch.json"
                                 ]
                             }
                         }
@@ -66,7 +66,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-button.json"
+                                    "https://github.com/jongossett622/content-types/master/configurator/configurator-button.json"
                                 ]
                             }
                         }
@@ -88,7 +88,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-button.json"
+                                    "https://github.com/jongossett622/content-types/master/configurator/configurator-button.json"
                                 ]
                             }
                         }
@@ -118,7 +118,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-label.json"
+                                    "https://github.com/jongossett622/content-types/master/configurator/configurator-label.json"
                                 ]
                             }
                         }
@@ -140,7 +140,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-label.json"
+                                    "https://github.com/jongossett622/content-types/master/configurator/configurator-label.json"
                                 ]
                             }
                         }

@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-transformation-template.json",
+    "id": "https://github.com/jongossett622/content-types/master/configurator/configurator-transformation-template.json",
     "allOf": [
         {
             "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -22,7 +22,7 @@
             "items": {
                 "allOf": [
                     {
-                        "$ref": "https://github.com/jongossett622/content-types/blob/master/configurator/lib/configurator-parameter-value.json#"
+                        "$ref": "https://github.com/jongossett622/content-types/master/configurator/lib/configurator-parameter-value.json#"
                     },
                     {
                         "title": "Parameter value",
