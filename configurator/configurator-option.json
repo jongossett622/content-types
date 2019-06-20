@@ -1,0 +1,89 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-option.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Option",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "thumbnail": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-image.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Thumbnail",
+            "description": ""
+        },
+        "label": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Label",
+            "description": ""
+        },
+        "paramName": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Parameter name for SVG layer",
+            "description": ""
+        },
+        "carouselImage": {
+            "type": "string",
+            "enum": [
+                "",
+                "main",
+                "side1",
+                "side2",
+                "int"
+            ],
+            "title": "Select view for carousel",
+            "description": ""
+        },
+        "swatches": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-swatch.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Swatches",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "thumbnail",
+        "label",
+        "paramName",
+        "carouselImage",
+        "swatches"
+    ]
+}

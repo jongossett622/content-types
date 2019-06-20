@@ -1,0 +1,78 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-monogram-configurator.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Monogram Configurator",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "label": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Label",
+            "description": ""
+        },
+        "thumbnail": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-image.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Thumbnail",
+            "description": ""
+        },
+        "labelUseForAll": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Label Use Monogram For All",
+            "description": ""
+        },
+        "monograms": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 2,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-monogram.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Monograms",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "label",
+        "thumbnail",
+        "labelUseForAll",
+        "monograms"
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-color.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Color",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "default": {
+            "type": "string",
+            "enum": [
+                "",
+                "black",
+                "green",
+                "silver",
+                "gray",
+                "olive",
+                "white",
+                "yellow",
+                "maroon",
+                "navy",
+                "red",
+                "blue",
+                "purple",
+                "teal",
+                "fuchsia",
+                "aqua"
+            ],
+            "title": "Select color",
+            "description": ""
+        },
+        "hex": {
+            "type": "string",
+            "minLength": 4,
+            "maxLength": 7,
+            "pattern": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+            "title": "Or define your custom hex color",
+            "description": "#ffffff",
+            "errors": {
+                "maxLength": "Set valid hex color",
+                "minLength": "Set valid hex color",
+                "pattern": "Set valid hex color"
+            }
+        }
+    },
+    "propertyOrder": [
+        "default",
+        "hex"
+    ]
+}

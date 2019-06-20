@@ -1,0 +1,77 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-monogram.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Monogram",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "image": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-svg-image.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "SVG Image",
+            "description": ""
+        },
+        "location": {
+            "type": "string",
+            "enum": [
+                "",
+                "patch",
+                "tag"
+            ],
+            "title": "Select monogram location",
+            "description": ""
+        },
+        "steps": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-step.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Steps",
+            "description": ""
+        }
+    },
+    "required": [
+        "location"
+    ],
+    "propertyOrder": [
+        "image",
+        "location",
+        "steps"
+    ]
+}

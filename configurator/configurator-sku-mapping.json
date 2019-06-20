@@ -1,0 +1,51 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-sku-mapping.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Sku Mapping",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "appGUID": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 36,
+            "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-4][0-9a-f]{3}-[0-9a-f]{4}-[0-9a-f]{12}$",
+            "title": "App Configurator GUID",
+            "description": "",
+            "errors": {
+                "maxLength": "Set valid GUID",
+                "pattern": "Set valid GUID"
+            }
+        },
+        "skuAndGUIDMapping": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-sku-mapping-item.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Product Configurator GUID with their SKU’s",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "appGUID",
+        "skuAndGUIDMapping"
+    ]
+}

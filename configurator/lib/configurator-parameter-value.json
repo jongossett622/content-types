@@ -1,0 +1,19 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/lib/configurator-parameter-value.json",
+    "title": "Configurator Parameter Value",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "value": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 50,
+            "title": "Parameter value",
+            "description": "Use parameters from your SVG"
+        }
+    },
+    "propertyOrder": [
+        "value"
+    ]
+}

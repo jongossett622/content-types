@@ -1,0 +1,24 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-label.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Label",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "text": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 256,
+            "title": "Label Text",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "text"
+    ]
+}

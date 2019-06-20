@@ -1,0 +1,19 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/lib/configurator-sku.json",
+    "title": "Configurator sku",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "sku": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 50,
+            "title": "Configurable product SKU",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "sku"
+    ]
+}

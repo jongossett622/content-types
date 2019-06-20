@@ -1,0 +1,102 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-app.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator App",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "logo": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-image.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Logo",
+            "description": ""
+        },
+        "strapline": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Strapline",
+            "description": ""
+        },
+        "resetButton": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-button.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Reset Button",
+            "description": ""
+        },
+        "saveButton": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-button.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Save Button",
+            "description": ""
+        },
+        "staticPath": {
+            "type": "string",
+            "format": "uri",
+            "title": "Static path for SVG overlay",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "logo",
+        "strapline",
+        "resetButton",
+        "saveButton",
+        "staticPath"
+    ]
+}

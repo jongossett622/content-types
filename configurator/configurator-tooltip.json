@@ -1,0 +1,31 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-tooltip.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Tooltip",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "heading": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Heading",
+            "description": ""
+        },
+        "copy": {
+            "type": "string",
+            "title": "Copy",
+            "description": "",
+            "format": "markdown"
+        }
+    },
+    "propertyOrder": [
+        "heading",
+        "copy"
+    ]
+}

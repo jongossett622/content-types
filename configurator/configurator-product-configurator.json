@@ -1,0 +1,137 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-product-configurator.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Product Configurator",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "product": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 256,
+            "title": "Product Name",
+            "description": ""
+        },
+        "category": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-product-category.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Product Category",
+            "description": ""
+        },
+        "images": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-svg-link.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Images for Carousel",
+            "description": ""
+        },
+        "options": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-option.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Options",
+            "description": ""
+        },
+        "monogramConfigurator": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-monogram-configurator.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Monogram Configurator",
+            "description": ""
+        },
+        "instruction": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-tooltip.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Tooltip",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "product",
+        "category",
+        "images",
+        "options",
+        "monogramConfigurator",
+        "instruction"
+    ]
+}

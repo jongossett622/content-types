@@ -1,0 +1,28 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-svg-link.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator SVG Link",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "title": "Name for product SVG image",
+            "description": "103697_nellis_main"
+        },
+        "alt": {
+            "type": "string",
+            "title": "Alt for image",
+            "description": "main"
+        }
+    },
+    "propertyOrder": [
+        "name",
+        "alt"
+    ]
+}

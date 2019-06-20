@@ -1,0 +1,78 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-swatch.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Swatch",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 256,
+            "title": "Swatch title",
+            "description": ""
+        },
+        "paramValue": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Parameter value for SVG layer",
+            "description": ""
+        },
+        "image": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-image.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Image",
+            "description": ""
+        },
+        "color": {
+            "type": "array",
+            "maxItems": 1,
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-color.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Color for Swatch",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "title",
+        "paramValue",
+        "image",
+        "color"
+    ]
+}

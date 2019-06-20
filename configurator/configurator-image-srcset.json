@@ -1,0 +1,32 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-image-srcset.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Image Srcset",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "key": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "title": "Key",
+            "description": "2x"
+        },
+        "queryString": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200,
+            "title": "Query String",
+            "description": "w=288&h=288"
+        }
+    },
+    "propertyOrder": [
+        "key",
+        "queryString"
+    ]
+}

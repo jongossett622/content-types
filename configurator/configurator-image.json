@@ -1,0 +1,84 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-image.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Image",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "image": {
+            "type": "object",
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                }
+            ],
+            "title": "Image",
+            "description": ""
+        },
+        "imageAltText": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 50,
+            "title": "Image alt text",
+            "description": ""
+        },
+        "transformationTemplates": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link"
+                    },
+                    {
+                        "properties": {
+                            "contentType": {
+                                "enum": [
+                                    "https://www.ping.com/configurator-transformation-template.json"
+                                ]
+                            }
+                        }
+                    }
+                ]
+            },
+            "title": "Transformation Templates",
+            "description": ""
+        },
+        "settings": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 50,
+            "title": "Settings",
+            "description": "w=144&h=144"
+        },
+        "srcSet": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "https://www.ping.com/lib/configurator-image-srcset.json#"
+                    },
+                    {
+                        "title": "SrcSet",
+                        "description": ""
+                    }
+                ]
+            },
+            "_interpolate": true,
+            "maxItems": 12,
+            "title": "Src Set",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "image",
+        "imageAltText",
+        "transformationTemplates",
+        "settings",
+        "srcSet"
+    ]
+}

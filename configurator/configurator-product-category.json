@@ -1,0 +1,24 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-product-category.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Product Category",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Category Title",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "title"
+    ]
+}

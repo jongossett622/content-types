@@ -1,0 +1,43 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-transformation-template.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Transformation Template",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Transformation Template Name",
+            "description": ""
+        },
+        "svgParams": {
+            "type": "array",
+            "items": {
+                "allOf": [
+                    {
+                        "$ref": "https://www.ping.com/lib/configurator-parameter-value.json#"
+                    },
+                    {
+                        "title": "Parameter value",
+                        "description": ""
+                    }
+                ]
+            },
+            "_interpolate": true,
+            "maxItems": 20,
+            "title": "Parameter values",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "name",
+        "svgParams"
+    ]
+}

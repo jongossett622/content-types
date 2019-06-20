@@ -1,0 +1,24 @@
+{
+    "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
+    "id": "https://www.ping.com/configurator-button.json",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "title": "Configurator Button",
+    "description": "",
+    "type": "object",
+    "properties": {
+        "text": {
+            "type": "string",
+            "minLength": 0,
+            "maxLength": 100,
+            "title": "Button Text",
+            "description": ""
+        }
+    },
+    "propertyOrder": [
+        "text"
+    ]
+}
