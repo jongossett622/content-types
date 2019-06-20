@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://www.ping.com/configurator-svg-link.json",
+    "id": "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-svg-link.json",
     "allOf": [
         {
             "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"

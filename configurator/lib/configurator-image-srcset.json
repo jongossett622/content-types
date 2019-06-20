@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://www.ping.com/lib/configurator-image-srcset.json",
+    "id": "https://github.com/jongossett622/content-types/blob/master/configurator/lib/configurator-image-srcset.json",
     "title": "Configurator Image Srcset",
     "description": "",
     "type": "object",

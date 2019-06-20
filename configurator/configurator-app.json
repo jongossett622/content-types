@@ -1,6 +1,6 @@
 {
     "$schema": "http://bigcontent.io/cms/schema/v1/schema#",
-    "id": "https://www.ping.com/configurator-app.json",
+    "id": "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-app.json",
     "allOf": [
         {
             "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
@@ -22,7 +22,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://www.ping.com/configurator-image.json"
+                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-image.json"
                                 ]
                             }
                         }
@@ -52,7 +52,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://www.ping.com/configurator-button.json"
+                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-button.json"
                                 ]
                             }
                         }
@@ -75,7 +75,7 @@
                         "properties": {
                             "contentType": {
                                 "enum": [
-                                    "https://www.ping.com/configurator-button.json"
+                                    "https://github.com/jongossett622/content-types/blob/master/configurator/configurator-button.json"
                                 ]
                             }
                         }
